@@ -127,8 +127,8 @@ Check on the status page, light should turn on, off, dim.
 # Original Tuya Config:
 Device configuration, as extracted from Tuya: 
 - LED Cool (Channel 4) on P26
-- PWM Frequency2000
-Device seems to be using WB2S module, which is using BK7231T.
+- PWM Frequency2000  
+Device seems to be using WB2S module, which is using BK7231T.  
 And the Tuya section starts, as usual, at 2023424
 
 This was extracted from the module (got it pre-owned, somebody didn't know how to set it up :P ):
