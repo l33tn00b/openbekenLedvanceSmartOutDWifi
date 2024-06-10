@@ -52,6 +52,7 @@ Nice guide to flashing (for another module but basics apply all the while): http
 WB2S datasheet: https://developer.tuya.com/en/docs/iot/wb2s-module-datasheet?id=K9ghecl7kc47  
 Unsoldered module, attached to a USB/Serial Converter with some wires. 
 Please note: You'll need some way of manually toggling GND at CEN to the module during flashing. So make it easy by having a jumper wire. This is not shown in the picture below.  
+Please note: Toggling CEN to GND didn't reliably work for me. Just toggle the supply voltage instead (leaving CEN open).
 Wires: 
 - Brown: CEN
 - Red: Vbat (3V3)
@@ -63,6 +64,7 @@ Wires:
 ![grafik](https://github.com/l33tn00b/openbekenLedvanceSmartOutDWifi/assets/28904067/80b61c00-fc81-4a1d-94b1-fc86599e0aac)
 
 Flashing as per https://github.com/openshwprojects/OpenBK7231T_App/blob/main/FLASHING.md
+Baud rate is 921600 sym/s.
 
 # Settings
 Pretty simple, there's only one PWM channel (delivered to the LED board with that two-pin connector (grey, black wires).
@@ -122,6 +124,57 @@ Check on the status page, light should turn on, off, dim.
 }
 ```
 
+# Original Tuya Config:
+Device configuration, as extracted from Tuya: 
+- LED Cool (Channel 4) on P26
+- PWM Frequency2000
+Device seems to be using WB2S module, which is using BK7231T.
+And the Tuya section starts, as usual, at 2023424
 
+This was extracted from the module (got it pre-owned, somebody didn't know how to set it up :P ):
+```
+{
+	"rstnum":"5",
+	"rstcor":"c",
+	"Jsonver":"1.1.6",
+	"brightmin":"26",
+	"title20":"1",
+	"deftemp":"100",
+	"c_lv":"1",
+	"wfcfg":"prod",
+	"colormin":"10",
+	"pmemory":"1",
+	"cmod":"c",
+	"cwtype":"0",
+	"md":"0",
+	"random":"0",
+	"wfb64":"1",
+	"stat":"0",
+	"token":"null",
+	"region":"null",
+	"reg_key":"null }{uuid",
+	"psk_key":"redacted",
+	"auth_key":"redacted",
+	"ap_ssid":"LDV SMART+",
+	"ap_passwd":"null",
+	"country_code":"CN",
+	"prod_test":"false }again",
+	"rstbr":"100",
+	"remdmode":"0",
+	"colormax":"100",
+	"cagt":"120",
+	"c_pin":"26",
+	"module":"WB2S",
+	"cwmaxp":"100",
+	"dmod":"0",
+	"onoffmode":"1",
+	"brightmax":"100",
+	"pwmhz":"2000",
+	"rsttemp":"100",
+	"category":"0501",
+	"defcolor":"c",
+	"defbright":"100",
+	"crc":"110"
+}
 
-
+```
