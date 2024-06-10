@@ -52,7 +52,7 @@ Nice guide to flashing (for another module but basics apply all the while): http
 WB2S datasheet: https://developer.tuya.com/en/docs/iot/wb2s-module-datasheet?id=K9ghecl7kc47  
 Unsoldered module, attached to a USB/Serial Converter with some wires. 
 Please note: You'll need some way of manually toggling GND at CEN to the module during flashing. So make it easy by having a jumper wire. This is not shown in the picture below.  
-Please note: Toggling CEN to GND didn't reliably work for me. Just toggle the supply voltage instead (leaving CEN open).
+Please note: Toggling CEN to GND didn't reliably work for me. Just toggle the supply voltage instead (leaving CEN open).  
 Wires: 
 - Brown: CEN
 - Red: Vbat (3V3)
