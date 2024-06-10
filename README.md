@@ -96,10 +96,6 @@ Check on the status page, light should turn on, off, dim.
 ![grafik](https://github.com/l33tn00b/openbekenLedvanceSmartOutDWifi/assets/28904067/a99d98dc-01cc-4871-ac5f-6204e59133bc)
 
 
-
-Check on the status page, light should turn on, off, dim.
-![grafik](https://github.com/l33tn00b/openbekenLedvanceSmartOutDWifi/assets/28904067/a99d98dc-01cc-4871-ac5f-6204e59133bc)
-
 # OpenBeken Template:
 ```
 {
