@@ -37,7 +37,7 @@ Carefully open the white heat shrink tube with a knife along the long edge...
 There's a WB2S module inside (don't mind showing the serial, here. It's not available in the Tuya cloud anymore :P))
 ![grafik](https://github.com/l33tn00b/openbekenLedvanceSmartOutDWifi/assets/28904067/44b6c8e7-0e31-4638-b894-d619216c6a8d)
 
-Slide the knife all the way along the top if the heat shrink tube. Apply moderate force to pull out the PCB.
+Slide the knife all the way along the top of the heat shrink tube. Apply moderate force to pull out the PCB.
 
 Keep the black sheet of plastic from the PCB's bottom side.
 
@@ -45,10 +45,21 @@ Remove the heat shrink tube still attached to the floodlight's case. Might take 
 
 Remove silicone from the small 2-pin connector on the LED panel. Unfasten the connector. 
 
-Unsolder the module.
+Unsolder the WB2S module.
 
 # Flashing
-Unsoldered module, attached to a USB/Serial Converter with some wires. Please note: You'll need some way of manually toggling 3V3 power to the module during flashing. So make it easy by having a jumper wire.
+Nice guide to flashing (for another module but basics apply all the while): https://community.home-assistant.io/t/detailed-guide-on-how-to-flash-the-new-tuya-beken-chips-with-openbk7231t/437276  
+WB2S datasheet: https://developer.tuya.com/en/docs/iot/wb2s-module-datasheet?id=K9ghecl7kc47  
+Unsoldered module, attached to a USB/Serial Converter with some wires. 
+Please note: You'll need some way of manually toggling GND at CEN to the module during flashing. So make it easy by having a jumper wire. This is not shown in the picture below.  
+Wires: 
+- Brown: CEN
+- Red: Vbat (3V3)
+- Black: GND
+- Orange: 1RX (goes to TX of USB/serial converter (at least for this converter model))
+- Purple: 1TX (goes to RX of USB/serial converter (at least for this converter model))
+
+
 ![grafik](https://github.com/l33tn00b/openbekenLedvanceSmartOutDWifi/assets/28904067/80b61c00-fc81-4a1d-94b1-fc86599e0aac)
 
 Flashing as per https://github.com/openshwprojects/OpenBK7231T_App/blob/main/FLASHING.md
