@@ -37,11 +37,11 @@ Carefully open the white heat shrink tube with a knife along the long edge...
 There's a WB2S module inside (don't mind showing the serial, here. It's not available in the Tuya cloud anymore :P))
 ![grafik](https://github.com/l33tn00b/openbekenLedvanceSmartOutDWifi/assets/28904067/44b6c8e7-0e31-4638-b894-d619216c6a8d)
 
-Apply moderate force to pull out the PCB.
+Slide the knife all the way along the top if the heat shrink tube. Apply moderate force to pull out the PCB.
 
-Keep the black sheet of plastic from the PCB's bottom side. Discard the white heat shrink tube.
+Keep the black sheet of plastic from the PCB's bottom side.
 
-Remove the heat shrink tube still attached to the floodlight's case. Might take more than moderate force to come off. Leave the white glue attached to the case. 
+Remove the heat shrink tube still attached to the floodlight's case. Might take more than moderate force to come off. Leave the white glue attached to the case. Discard the white heat shrink tube.
 
 Remove silicone from the small 2-pin connector on the LED panel. Unfasten the connector. 
 
