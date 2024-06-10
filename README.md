@@ -1,5 +1,5 @@
 # openbekenLedvanceSmartOutDWifi
-Openbeken on Ledvance Outdoor Floodlight
+Openbeken on Ledvance Outdoor Floodlight (Smart+ Wifi Flood, 50W, EAN 4058075474666, Warm White)
 
 Disclaimer: You're working with mains voltage. Only do this if you're a trained professional. Don't flash while on mains voltage. 
 
